@@ -1,0 +1,17 @@
+<br/>
+<div>
+	<h1><%= @beer.name %></h1>
+		<strong>Created Date:</strong> <%= @beer.created_at %><br/>
+	</p>
+	<p>
+		<h3>Style:</h3>
+		<%= @beer.style==nil ? "Style Not Found" : @beer.style.style %>
+	</p>
+	<p>
+		<h3>Notes:</h3>
+		<%= @beer.notes %>
+	</p>
+	<hr/>
+	<%= link_to 'Back to List', {:action => 'index'} %> <br/>
+	<%= link_to 'Edit', {:action => 'edit'} %>
+</div>

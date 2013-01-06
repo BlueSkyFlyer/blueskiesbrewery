@@ -1,0 +1,13 @@
+<% if @beers.blank? %>
+<p> Get Brewing! There aren't any beers currently in the system!</p>
+<% else %>
+<div>
+	<h2>Our Brews</h2>
+	<ul id="beers">
+		<% @beers.each do |c| %>
+		<li><%= link_to c.name, c %></li>
+		<% end %>
+	</ul>
+	<% end %>
+	<p><%= link_to "Add Another Beer", {:action => 'new'} %></p>
+</div>

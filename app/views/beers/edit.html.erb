@@ -1,0 +1,16 @@
+<h1>Edit Beer Details</h1>
+<%= form_for @beer do |f| %>
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :style_id, "Style" %>
+		<%= select("beer", "style_id", Style.all.collect {|s| [ s.style, s.id]}) %>	
+	</p>
+	<p><%= f.label :notes %>
+		<%= f.text_area :notes %>
+	</p>
+	<%= f.submit "Change" %>
+<% end %>
+<%= link_to 'Back', {:action => 'index'} %>
