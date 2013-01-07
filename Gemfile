@@ -2,12 +2,12 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 
-gem 'sqlite3'
-gem 'sqlite3-ruby'
+
 gem 'jquery-rails'
 
 group :development do
 	gem 'rspec-rails'
+	gem 'sqlite3'
 end
 
 group :production do 
@@ -17,6 +17,7 @@ end
 group :test do
 	gem 'rspec'
 	gem 'webrat'
+	gem 'sqlite3'
 end
 
 group :assets do
