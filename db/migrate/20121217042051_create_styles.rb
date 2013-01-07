@@ -14,6 +14,5 @@ class CreateStyles < ActiveRecord::Migration
   	Style.create :name => "Stout"
   end
       t.timestamps
-    end
   end
 end
