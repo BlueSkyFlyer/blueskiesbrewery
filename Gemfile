@@ -2,7 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 
-# gem 'sqlite3'
+gem 'sqlite3'
+gem 'sqlite3-ruby'
+gem 'jquery-rails'
 
 group :development do
 	gem 'rspec-rails'
@@ -23,4 +25,4 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+
