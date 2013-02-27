@@ -20,3 +20,4 @@
     Fermentabletype.create :recipetype => "All Grain"
     Fermentabletype.create :recipetype => "Extract with Specialty Grains"
     Fermentabletype.create :recipetype => "Partial Mash"
+    Fermentabletype.craete :recipetype => "Extract"

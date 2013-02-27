@@ -1,15 +1,27 @@
 <br/>
 <div>
 	<h1><%= @beer.name %></h1>
-		<strong>Created Date:</strong> <%= @beer.created_at %><br/>
+		<strong>Brewed On:</strong> <%= @beer.created_at %><br/>
 	</p>
 	<p>
 		<h3>Style:</h3>
-		<%= @beer.style==nil ? "Style Not Found" : @beer.style.style %>
+		<%= @beer.style==nil ? "Style Not Found" : simple_format(@beer.style) %>
 	</p>
 	<p>
+		<h3>Malts and Grains: </h3>
+	    <%= @beer.fermentables==nil ? "There are no Malts or Grains saved" : simple_format(@beer.fermentables) %>
+	</p>
+	<p> 
+		<h3>Hops:</h3>
+		<%= @beer.hops==nil ? "There aren't any hops saved" : simple_format(@beer.hops) %>
+	</p>
+	<p>
+	<p>
+		<h3>Recipe:</h3>
+		<%= @beer.recipe==nil ? "You haven't entered a recipe for this beer yet" : simple_format(@beer.recipe) %>
+	</p>
 		<h3>Notes:</h3>
-		<%= @beer.notes %>
+		<%= simple_format(@beer.notes) %>
 	</p>
 	<hr/>
 	<%= link_to 'Back to List', {:action => 'index'} %> <br/>

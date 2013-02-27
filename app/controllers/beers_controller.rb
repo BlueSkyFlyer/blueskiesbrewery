@@ -1,9 +1,11 @@
 class BeersController < ApplicationController
 	def index
+		@title = "Beers"
 		@beers = Beer.find(:all)
 	end
 	def show
 		@beer = Beer.find(params[:id])
+		@title = @beer.name 
 	end
 	def new
 		@beer = Beer.new
@@ -14,8 +16,8 @@ class BeersController < ApplicationController
 		if @beer.save
 			redirect_to :action => 'index'
 		else
-			@styles = Style.find(:all)
-			render :action => 'new'
+			flash[:error] = "Unable to create beer!"
+			redirect_to beer_path(@beer)
 		end
 	end
 	def edit

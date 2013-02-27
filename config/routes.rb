@@ -1,4 +1,19 @@
 BlueskybreweryApp::Application.routes.draw do
+  root :to => 'pages#home'
+  get "pages/home"
+  get "pages/about"
+  get "pages/calendar"
+
+  match '/contact', :to => 'pages#contact'
+
+  match '/about', :to => 'pages#about'
+
+  match '/help', :to => 'pages#help'
+
+  match '/calendar', :to => 'pages#calendar'
+
+  match '/pages', :to => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +63,7 @@ BlueskybreweryApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'beers#index'
+ 
 
   # See how all your routes lay out with "rake routes"
 

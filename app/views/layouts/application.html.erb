@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Blue Sky Brewery</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<%= image_tag "BlueSkiesBrewery.png" %>
-<% flash.each do |type, message| %>
-	<%= message %>
-<% end %>
-<%= yield %>
-
-</body>
+  <head>
+    <title><%= title %></title>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/stylesheets' %>
+  </head>
+  <body>
+  	<%= render 'layouts/header' %>
+  	<div class="continer">
+        <% flash.each do |type, message| %>
+	      <%= message %>
+        <% end %>
+        <section class="round">
+    	  <%= yield %>
+    	</section>
+    	<%= render 'layouts/footer' %>
+    </div>
+  </body>
 </html>

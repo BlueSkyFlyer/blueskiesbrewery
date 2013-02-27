@@ -1,16 +1,29 @@
+<div>
 <h1>Edit Beer Details</h1>
 <%= form_for @beer do |f| %>
 	<p>
-		<%= f.label :name %>
+		<h3><%= f.label :name %></h3>
 		<%= f.text_field :name %>
 	</p>
 	<p>
-		<%= f.label :style_id, "Style" %>
-		<%= select("beer", "style_id", Style.all.collect {|s| [ s.style, s.id]}) %>	
+		<h3><%= f.label :style %></h3>
+		<%= f.text_field :style %>	
 	</p>
-	<p><%= f.label :notes %>
+	<p> <h3><%= f.label :fermentables %></h3>
+		<%= f.text_area :fermentables %>
+	</p>
+	<p>
+		<h3><%= f.label :hops %></h3>
+		<%= f.text_area :hops %>
+	</p>
+	<p>
+		<h3><%= f.label :recipe %></h3>
+		<%= f.text_area :recipe %>
+	</p>
+		<h3><%= f.label :notes %></h3>
 		<%= f.text_area :notes %>
 	</p>
 	<%= f.submit "Change" %>
 <% end %>
 <%= link_to 'Back', {:action => 'index'} %>
+</div>

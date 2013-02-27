@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121224180152) do
+ActiveRecord::Schema.define(:version => 20130227033032) do
 
   create_table "beers", :force => true do |t|
     t.datetime "created_at",         :null => false
@@ -20,6 +20,10 @@ ActiveRecord::Schema.define(:version => 20121224180152) do
     t.integer  "style_id"
     t.text     "notes"
     t.integer  "fermentabletype_id"
+    t.text     "fermentables"
+    t.text     "hops"
+    t.text     "recipe"
+    t.string   "style"
   end
 
   create_table "fermentabletypes", :force => true do |t|

@@ -1,0 +1,141 @@
+.container {
+	width: 710px;
+}
+
+body {
+	background-image:  url('SkyPattern1.jpg');
+}
+
+header {
+	margin: 40px;
+}
+
+section {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	font-size: 100%;
+	padding: 20px;
+	background-image: url('fabric.png');
+}
+
+/* Links */
+
+a {
+	color: #09c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #069;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #069;
+}
+
+/*Trying to make links to buttons - doesn't work right now*/
+
+a.button {
+	background:transparent url('bg_button_a.gif') no-repeat scroll top right;
+	color: #444;
+	display: block;
+	float: left;
+	height: 24px;
+	margin-right: 6px;
+	padding-right: 18px; /* sliding doors padding */
+	text-decoration: none;
+}
+
+a.button span {
+	background: transparent url('bg_button_span.gif') no-repeat;
+	display: block;
+	line-height: 14px; 
+	padding: 5px 0 5px 18px;
+}
+
+a.button:active {
+	background-position: bottom right;
+	color: #000;
+	outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button:active span {
+	background-position: bottom left;
+	padding: 6px 0 4px 18px; /* push text down 1 px */
+}
+
+/* Headers */
+
+h1 {color: #09c}
+h2 {color: #09c}
+h3 {color: #09c}
+
+/* Navigation */
+
+nav {
+	float:right;
+	background-image: url('fabric.png');
+	padding: 0 0.7em;
+	white-space: nowrap;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0.2em 0;
+}
+
+nav ul li a {
+	padding: 0 5px;
+	font-weight: bold;
+}
+
+nav ul li a:visited {
+	color: #09c;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+/* Sign up button */
+
+a.signup_button {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	width: 190px;
+	color: #fff;
+	background: #006400;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 20px;
+}
+
+/* Round corners */
+
+.round {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+	text-align: center;
+	margin: 40px;
+	width: auto;
+}
+
+footer nav {
+	float: none;
+}
