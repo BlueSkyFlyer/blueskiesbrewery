@@ -1,7 +1,7 @@
 <footer>
   <nav class="round">
   	<ul>
-  		<li><%= link_to "About", 'about' %></li>
-  		<li><%= link_to "Contact", 'pages#contact' %></li>
-  		<li><%= link_to "Home", 'pages#index' %></li>
+  		<li><%= link_to "About", :controller => :pages, :action => :about %></li>
+  		<li><%= link_to "Contact", :controller => :pages, :action => :contact %></li>
+  		<li><%= link_to "Home", :controller => :pages, :action => :home %></li>
 </footer>

@@ -2,7 +2,7 @@
 	<%= image_tag("BlueSkiesBrewery.png", :alt => "Blue Skies Brewery") %>
 	<nav class="round">
 		<ul>
-			<li><%= link_to "Home", 'pages#home' %></li>
+			<li><%= link_to "Home", :controller => :pages, :action => :home %></li>
 			<li><%= link_to "Help", 'help' %></li>
 			<li><%= link_to "Sign In", '#' %></li>
 		</ul>
