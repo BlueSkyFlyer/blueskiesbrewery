@@ -10,22 +10,8 @@
  *
  *= require_self
  **** require_tree .
- *= require blueprint/screen
- *= require custom
+ *= require 'blueprint/screen'
+ *= require 'custom'
+ *= require 'beer'
 */
-body {
-	background-image:  url('SkyPattern1.jpg');
-	font: 10pt/16pt verdana;
-	margin-right: 50px;
-	margin-left: 50px;
-}
-div {
-	width: 600 px;
-	border: 2px solid #000000;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-image: url('fabric.png');
-}
 
-h1 {color: blue}
-h2 {color: blue}
