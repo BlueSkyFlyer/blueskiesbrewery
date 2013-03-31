@@ -1,5 +1,7 @@
 <header>
-	<%= image_tag("BlueSkiesBrewery.png", :alt => "Blue Skies Brewery") %>
+	<%= link_to image_tag("BlueSkiesBrewery.png", :alt => "Blue Skies Brewery"), 
+	  root_path
+	%>
 	<nav class="round">
 		<ul>
 			<li><%= link_to "Home", :controller => :pages, :action => :home %></li>

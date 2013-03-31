@@ -3,11 +3,26 @@
 <% else %>
 <div>
 	<h2>Our Brews</h2>
-	<ul id="beers">
+	  <table>
+	    <tr>
+	      <th><h3>Beer</h3></th>
+	      <th><h3>Style</h3></th>
+	    </tr>
+
+	  <% @beers.each do |beer| %>
+	    <tr>
+	      <td><%= link_to beer.name, beer %></td>
+	      <td><%= beer.style %></td>
+	    <tr>
+	  <% end %>
+	</table>
+
+
+	<!-- <ul id="beers">
 		<% @beers.each do |c| %>
 		<li><%= link_to c.name, c %></li>
 		<% end %>
-	</ul>
+	</ul> -->
 	<% end %>
 	<p><%= link_to "Add Another Beer", {:action => 'new'} %></p>
 </div>
