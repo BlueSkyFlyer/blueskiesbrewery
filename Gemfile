@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
+# 2013-03-31 - DECj: Moving to 3.2.12 from 3.2.1 for security and rake issue
+gem 'rails', '3.2.12'
 
 
 gem 'jquery-rails'
