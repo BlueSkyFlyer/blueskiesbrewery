@@ -19,6 +19,8 @@ group :test do
 	gem 'rspec'
 	gem 'webrat'
 	gem 'sqlite3'
+	gem 'capybara', "~> 2.0.2"
+	gem 'factory_girl_rails', "~> 4.0"
 end
 
 group :assets do
