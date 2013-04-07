@@ -18,3 +18,5 @@ pickle-email-*.html
 .project
 
 sublime-project
+sublime-project.sublime-workspace
+.DS_Store

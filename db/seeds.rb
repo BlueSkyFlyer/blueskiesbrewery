@@ -6,18 +6,18 @@
 #   cities = City.create([{ style: 'Chicago' }, { style: 'Copenhagen' }])
 #   Mayor.create(style: 'Emanuel', city: cities.first)
 	
-	Style.create :style => "American IPA"
-  	Style.create :style => "Imperial IPA"
-  	Style.create :style => "IPA"
-  	Style.create :style => "Hefeweizen"
-  	Style.create :style => "Weizenbock"
-  	Style.create :style => "Witbier"
-  	Style.create :style => "Pilsner"
-  	Style.create :style => "Pale Ale"
-  	Style.create :style => "Porter"
-  	Style.create :style => "Stout"
+	  Style.find_or_create_by_name(:name => "American IPA")
+  	Style.find_or_create_by_name(:name => "Imperial IPA")
+  	Style.find_or_create_by_name(:name => "IPA")
+  	Style.find_or_create_by_name(:name => "Hefeweizen")
+  	Style.find_or_create_by_name(:name => "Weizenbock")
+  	Style.find_or_create_by_name(:name => "Witbier")
+  	Style.find_or_create_by_name(:name => "Pilsner")
+  	Style.find_or_create_by_name(:name => "Pale Ale")
+  	Style.find_or_create_by_name(:name => "Porter")
+  	Style.find_or_create_by_name(:name => "Stout")
 
-    Fermentabletype.create :recipetype => "All Grain"
-    Fermentabletype.create :recipetype => "Extract with Specialty Grains"
-    Fermentabletype.create :recipetype => "Partial Mash"
-    Fermentabletype.create :recipetype => "Extract"
+    Fermentabletype.find_or_create_by_recipetype(:recipetype => "All Grain")
+    Fermentabletype.find_or_create_by_recipetype(:recipetype => "Extract with Specialty Grains")
+    Fermentabletype.find_or_create_by_recipetype(:recipetype => "Partial Mash")
+    Fermentabletype.find_or_create_by_recipetype(:recipetype => "Extract")
