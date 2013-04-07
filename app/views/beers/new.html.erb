@@ -7,7 +7,8 @@
 	</p>
 	<p>
 		<h3><%= f.label :style %></h3>
-		<%= f.text_field :style %>	
+		<% style_array = Style.all.map { |s| [s.name, s.id]} %>
+		<%= f.select(:style_id, style_array) %>	
 	</p>
   </div>
   <div>

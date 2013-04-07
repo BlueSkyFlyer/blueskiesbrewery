@@ -4,8 +4,7 @@
 		<strong>Brewed On:</strong> <%= @beer.created_at %><br/>
 	</p>
 	<p>
-		<h3>Style:</h3>
-		<%= @beer.style==nil ? "Style Not Found" : simple_format(@beer.style) %>
+		<%= raw(display_beer_style(@beer)) %>
 	</p>
 	<p>
 		<h3>Malts and Grains: </h3>
