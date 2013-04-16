@@ -11,11 +11,11 @@ header {
 }
 
 section {
-	margin-left: 60px;
-	margin-right: 60px;
+	margin-left: 100px;
+	margin-right: 100px;
 	margin-bottom: 40px;
 	font-size: 100%;
-	padding: 20px;
+	padding: 60px;
 	background-image: url('fabric.png');
 }
 
@@ -132,7 +132,9 @@ a.signup_button {
 
 footer {
 	text-align: center;
-	margin: 40px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 40 px;
 	width: auto;
 }
 

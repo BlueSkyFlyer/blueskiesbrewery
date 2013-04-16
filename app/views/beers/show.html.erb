@@ -1,28 +1,38 @@
 <br/>
-<div>
-	<h1><%= @beer.name %></h1>
-		<strong>Brewed On:</strong> <%= @beer.created_at %><br/>
-	</p>
-	<p>
-		<%= raw(display_beer_style(@beer)) %>
-	</p>
-	<p>
-		<h3>Malts and Grains: </h3>
-	    <%= @beer.fermentables==nil ? "There are no Malts or Grains saved" : simple_format(@beer.fermentables) %>
-	</p>
-	<p> 
-		<h3>Hops:</h3>
-		<%= @beer.hops==nil ? "There aren't any hops saved" : simple_format(@beer.hops) %>
-	</p>
-	<p>
-	<p>
-		<h3>Recipe:</h3>
-		<%= @beer.recipe==nil ? "You haven't entered a recipe for this beer yet" : simple_format(@beer.recipe) %>
-	</p>
-		<h3>Notes:</h3>
-		<%= simple_format(@beer.notes) %>
-	</p>
+  <table>
+  	<tr>
+  	  <th width="150"><h1><%= @beer.name %></h1></th>
+  	  <th></th>
+  	</tr>
+
+  	<tr>
+  	  <td><h3>Brewed On:</h3></td>
+  	  <td><%= @beer.created_at %></td>
+  	</tr>
+
+  	<tr>
+  	  <td><h3>Style:</h3></td>
+  	  <td><%= @beer.style.name %></td>
+  	  <!--<%= raw(display_beer_style(@beer)) %>-->
+  	</tr>
+
+  	<tr>
+  	  <td><h3>Malts and Grains: </h3></td>
+	  <td><%= @beer.fermentables==nil ? "There are no Malts or Grains saved" : simple_format(@beer.fermentables) %></td>
+	</tr>
+	<tr> 
+		<td><h3>Hops:</h3></td>
+		<td><%= @beer.hops==nil ? "There aren't any hops saved" : simple_format(@beer.hops) %></td>
+	</tr>
+	<tr>
+		<td><h3>Recipe:</h3></td>
+		<td><%= @beer.recipe==nil ? "You haven't entered a recipe for this beer yet" : simple_format(@beer.recipe) %></td>
+	</tr>
+	<tr>
+		<td><h3>Notes:</h3></td>
+		<td><%= simple_format(@beer.notes) %></td>
+	</tr>
+  </table>
 	<hr/>
 	<%= link_to 'Back to List', {:action => 'index'} %> <br/>
 	<%= link_to 'Edit', {:action => 'edit'} %>
-</div>
