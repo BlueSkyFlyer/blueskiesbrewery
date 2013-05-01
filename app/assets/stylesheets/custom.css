@@ -3,7 +3,10 @@ body {
 }
 
 header {
-	margin: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 section {
@@ -124,7 +127,7 @@ a.signup_button {
 	border-radius: 10px;
 }
 
-/* Footer */
+/* Footer */ 
 
 footer {
 	text-align: center;
