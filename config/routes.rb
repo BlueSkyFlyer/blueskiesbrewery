@@ -2,9 +2,6 @@ BlueskybreweryApp::Application.routes.draw do
   get "users/new"
 
   root :to => 'pages#home'
-  get "pages/home"
-  get "pages/about"
-  get "pages/calendar"
 
   match '/contact', :to => 'pages#contact'
 
